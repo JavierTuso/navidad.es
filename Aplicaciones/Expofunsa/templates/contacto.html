@@ -1,0 +1,123 @@
+{% extends "./plantilla.html" %}
+{% block contenido %}
+{% load static %}
+<br>
+<br>
+
+<div class="w3-container w3-white w3-text-black w3-padding-32" id="donde" style="max-width: 800px; margin: 0 auto;">
+  <div>
+      <img src="{% static 'img/contacto.jpg' %}"alt="FUNSA" width="800px"  >
+  </div>
+    <div>
+    	<div>
+    		<strong><h1 style=text-align:center><b>Más información</b></h1></strong>
+    	  &nbsp;
+        <hr style="width: 50px; border: 5px solid; text-align: left; margin-left: 0;">
+    		<p style="text-align:center">Queremos estar en contacto personal con usted, por favor llene los siguientes <br>espacios</p>
+    		<p>Antes de llenar y enviar el formulario, lo invitamos a leer nuestro <strong><a style="color:red" href="">Aviso de Privacidad</a></strong></p>
+    		<p style=color:red><strong>ATENCIÓN</strong>: Al llenar y enviar el formulario, Ud. acepta haber leído nuestro Aviso de Privacidad.</p>
+    		<p><span style="color:red"><strong>* Campo requerido.</strong></span></p>
+    		<div class="row">
+    			<div class="col-md-6">
+    					<span> </span><br>
+    					<span >Empresa: </span><br>
+    					<input type="text" name="empres" value="" style="width:100%;border-radius: 10px">
+    				</div>
+    				<div class="col-md-6">
+    					<span> </span><br>
+    					<span >RFC: </span><br>
+    					<input type="text" name="rfc" value="" style="width:100%;border-radius: 10px">
+    				</div>
+    			</div>
+    				<span> </span><br>
+    				<span >Giro: </span>
+    				<input type="text" name="gir" value="" style="width:100%;border-radius: 10px"><br>
+    				<span> </span><br>
+    				<span >Cargo: </span><br>
+    				<input type="text" name="carg" value="" style="width:100%;border-radius: 10px"><br>
+
+    				<span> </span><br>
+    				<span>Nombre(s): <span style="color:red"><strong>*</strong> </span></span>
+    				<input type="text" name="name" value="" style="width:100%;border-radius: 10px"><br>
+
+    				<span> </span><br>
+    				<span >Apellidos: <span style="color:red"><strong>*</strong> </span></span>
+    				<input  type="text" name="apell" value="" style="width:100%;border-radius: 10px"><br>
+
+    				<span> </span><br>
+    				<span >Email: <span style="color:red"><strong>*</strong> </span></span>
+    				<input  type="text" name="email" value="" style="width:100%;border-radius: 10px"><br>
+            <div class="row">
+              <div class="col-md-6">
+                <span> </span><br>
+      					<span >Teléfono (incluir Clave LADA): <span style="color:red"><strong>*</strong> </span></span>
+      					<input  type="text" name="tel" value="" style="width:100%;border-radius: 10px"><br>
+              </div>
+              <div class="col-md-6">
+                <span> </span><br>
+                <span >Celular: </span>
+                <input  type="text" name="cel" value="" style="width:100%;border-radius: 10px">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span> </span><br>
+      					<span >Ciudad: <span style="color:red"><strong>*</strong> </span></span>
+      					<input  type="text" name="ciu" value="" style="width:100%;border-radius: 10px">
+              </div>
+              <div class="col-md-6">
+                <span> </span><br>
+                <span >Estado: <span style="color:red"><strong>*</strong> </span></span>
+                <input type="text" name="esta" value="" style="width:100%;border-radius: 10px">
+
+              </div>
+            </div><br>
+    			<div  style= "border: 1px solid #ccc; box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);">
+    				<p>Temporadas de interés:
+    				<input  type="checkbox" name="tempo1" value="Navidad">Navidad
+    				<input  type="checkbox" name="tempo2" value="Fiestas Patrias">Fiestas Patrias
+    				<input  type="checkbox" name="tempo3" value="Día de muertos">Día de muertos
+    				<input  type="checkbox" name="tempo4" value="Carnavales">Carnavales
+    				<input  type="checkbox" name="tempo5" value="Otras">Otras
+    			</div>
+          <br>
+    			<div style= "border: 1px solid #ccc; box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);">
+    				<p class="w3-text-black">¿Cómo nos conoció?:</p>
+    				<p>
+    					<input  type="radio" name="como" value="Recomendación">
+    					<label>Recomendación</label>
+    				</p>
+    				<p>
+    					<input  type="radio" name="como" value="Página web">
+    					<label>Página web</label>
+    				</p>
+    				<p>
+    					<input  type="radio" name="como" value="Publicidad en Internet">
+    					<label>Publicidad en Internet</label>
+    				</p>
+    				<p>
+    					<input  type="radio" name="como" value="Redes sociales">
+    					<label>Redes sociales</label>
+    				</p>
+    				<p>
+    					<input  type="radio" name="como" value="Visita de un vendedor">
+    					<label>Visita de un vendedor</label>
+    				</p>
+    				<p>
+    					<input  type="radio" name="como" value="Invitación por correo electrónico">
+    					<label>Invitación por correo electrónico</label>
+    				</p>
+    			</div>
+          </div>
+			<br>
+      <br>
+			<input type="submit" name="submit" value="Enviar">
+      <br>
+      <br>
+
+		<p >Uno de nuestros asesores con gusto le atenderá y le enviará un correo para contactarlo.</p>
+
+
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "./plantilla.html" %}
+{% block contenido %}
+{% load static %}
+<br>
+<div class="w3-container w3-white w3-text-black w3-padding-32" id="donde" style="max-width: 1650px; margin: 0 auto;">
+  <h1 class="center text-red " style="color:red;text-align:center" >CONTACTO</h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-6">
+    			<p class="w3-center w3-xxlarge">GRUPO FUNSA:</p>
+            	<p class="w3-center"><img src="{% static 'img/logos_grupo.jpg' %}" width="80%" alt="FUNSA"></p>
+    			<p>Av. Emiliano Zapata Pte. #100<br>
+    			Soyaniquilpan de Juárez, Estado de México<br>
+    			C.P. 54280<br>
+    			Salida Autopista México-Querétaro Km. 93</p>
+
+    					<p>Teléfonos:</p>
+    					<p> 761-735-3042 / 3046 / 3123<br>
+    					 800-7777-FUN (386)</p>
+    				</div>
+
+    <div class="col-md-6">
+              <a href="https://www.google.com/maps/place/Todo+Decoraciones+Navide%C3%B1as+y+Fiestas+Patrias+S.A.+de+C.V.+-+FUNSA/@20.0184958,-99.5360131,123m/data=!3m1!1e3!4m8!1m2!2m1!1sfunsa+todo+decoraciones+mapa!3m4!1s0x0:0xbb54bfdc38827610!8m2!3d20.018885!4d-99.535884" target="_blank"><img src="{% static 'img/maps.jpg' %}"  style="width:100%" alt="GoogleMaps"></a>
+    </div>
+    <p><a href="mailto:ventas@funsa.com.mx">ventas@funsa.com.mx</a></p>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

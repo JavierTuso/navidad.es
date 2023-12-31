@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Expo-FUNSA Todo Decoraciones Navideñas, Fiestas Patrias Mexicanas y toda ocasión</title>
+    <!-- Importacion de Bootstrap y jQuery desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-nvAa0+6tR1s7/3ow51ZaJdHq4GAvAe4C+MCUnNqL4mdWig++0br6WJHWxOPIcIqE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+    <!-- Importacion de google maps -->
+
+</head>
+<style>
+        body {
+            background-image: url('{% static "img/logo5.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        .btn-cafe {
+            background-color: #9e6d38;
+            color: white;
+        }
+
+        .btn-cafe:hover {
+            background-color: #7a532e;
+        }
+    </style>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+
+            <!-- Bloque de imagen con fondo de color café -->
+
+            <a class="btn btn-cafe" href="/"><img src="{% static 'img/logo6.png' %}" alt="Imagen" class="img-fluid"></a>  
+          <br><br>
+            <!-- Bloque de texto con fondo de color café -->
+                        <div class="btn btn-cafe">
+                            <p>RESERVACIONES</p>
+                            <p>Tel.: 761 6906185</p>
+                            <p>761 6906186</p>
+                            <p>761 6906187</p>
+                            <p>info@restinn.com.mx</p>
+                        </div><br><br>
+            <!-- Botones con clase personalizada -->
+            <button type="button" class="btn btn-cafe" data-toggle="modal" data-target="#modal1">El Hotel</button><br><br>
+            <button type="button" class="btn btn-cafe" data-toggle="modal" data-target="#modal2">Habitaciones</button>
+            <button type="button" class="btn btn-cafe" data-toggle="modal" data-target="#modal3">Salones</button><br><br>
+            <button type="button" class="btn btn-cafe" data-toggle="modal" data-target="#modal4">Tarifas Habitaciones</button><br><br>
+            <button type="button" class="btn btn-cafe" data-toggle="modal" data-target="#modal6">Galeria</button><br><br>
+            <button type="button" class="btn btn-cafe" data-toggle="modal" data-target="#modal5">Ubicacion</button><br><br>
+            <button type="button" class="btn btn-cafe" data-toggle="modal" data-target="#modal7">Aviso de Privacidad</button><br><br>
+            <button type="button" class="btn btn-cafe" data-toggle="modal" data-target="#modal8">Hosting y diseño AlA de Avispa Editores</button><br><br>
+        </div>
+    </div>
+</div>
+
+  <!-- Modals -->
+  <div class="modal" id="modal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Contenido del modal -->
+        <div class="modal-header">
+          <h5 class="modal-title">Hotel Rest-inn San Francisco</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>HOTEL REST-INN SAN FRANCISCOEL NUEVO DESTINO PARA TUS VACACIONESHotel de estilo mexicano contemporáneo minimalista donde disfrutarás tu estancia con comodidad, seguridad y limpieza. Cuenta con instalaciones y servicios, atención personalizada y calidad inigualable. Salones para eventos exclusivos. Ubicado en Av. Emiliano Zapata 100, municipio de San Francisco Soyaniquilpan, Estado de México, Código Postal 54280 donde puedes realizar tus negocios, cursos, convenciones, congresos, talleres, retiros, vacacionar con tu familia, descansar, divertirte y realizar tus eventos en sus espacios creados especialmente para tí.46 habitaciones: Presidencial Suite - Master Suite - Junior SuiteHabitaciones con cama King Size - Habitaciones con cama Queen Size - Habitaciones con dos camas matrimonialesInternet - JardinesDulceríaSalones para eventos como: XV años, bodas, bautizo, presentación, graduaciones, clausura de cursos escolaresSalón de juegos: carambola, pool, dominó, cartas - Salones para conferenciasAv. Emiliano Zapata 100 Pte., San Francisco SoyaniquilpanEstado de México, C.P. 54280 - Teléfonos República Mexicana: 761 6906185 / 761 6906186 / 761 6906187www.restinn.com.mx - info@restinn.com.mx</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modals -->
+  <div class="modal" id="modal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Contenido del modal -->
+        <div class="modal-header">
+          <h5 class="modal-title">Modal 1</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Contenido del Modal 1</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modals -->
+  <div class="modal" id="modal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Contenido del modal -->
+        <div class="modal-header">
+          <h5 class="modal-title">Modal 1</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Contenido del Modal 1</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modals -->
+  <div class="modal" id="modal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Contenido del modal -->
+        <div class="modal-header">
+          <h5 class="modal-title">Tarifas habitaciones</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Tarifas y promociones de habitacionesUNA CAMA QUEEN SIZE (2 personas) - $ 720.00UNA CAMA KING SIZE (2 personas) - $ 820.00DOS CAMAS MATRIMONIALES: (2 adultos + 2 menores de 10 años) - $ 920.00JUNIOR SUITE (2 personas) - $ 1,080.00MASTER SUITE: (2 personas) - $ 1,240.00 - (3 personas) - $ 1,400.00SUITE PRESIDENCIAL (2 personas) - $ 1,420.00Precio incluye IVA e Impuesto sobre Hospedaje, por noche por habitación - El cupo máximo por habitación:QUEEN SIZE, KING SIZE Y PRESIDENCIAL: Cupo máximo por habitación es de 2 personasMASTER SUITES: Cupo máximo por habitación es de 3 personasMATRIMONIALES: Cupo máximo por habitación es de 4 personas, incluyendo en todas 2 adultos y 2 niñosLos precios incluyen únicamente: Internet y uso de áreas generales. Alimentos, bebidas y demás instalaciones tendrán costo adicional. En virtud a que las líneas de Internet en la zona son muy irregulares, el Hotel no se hace responsable por interrupciones o variación en la recepción de la señal.Todo el HOTEL es libre de humo por lo que NO está permitido fumar.Solo se permite el consumo de alimentos y bebidas que sean adquiridas en nuestras instalaciones.NO HAY DESCUENTOS EN NUESTRAS TARIFASAceptamos tarjetas: VISA, MASTERCARD, AMERICAN EXPRESS</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts de Bootstrap y jQuery (asegúrate de incluir jQuery antes que Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  </body>
+  </html>

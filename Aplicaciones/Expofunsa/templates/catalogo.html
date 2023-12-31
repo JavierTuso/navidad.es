@@ -1,0 +1,128 @@
+{% extends "./plantilla.html" %}
+{% block contenido %}
+{% load static %}
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <img src="{% static 'img/flyer.jpg' %}" alt="img1" style="width:100%;">
+    <br><br><br>
+    <h1 style="text-align:center;"><b>Más información</b></h1> <br><br><br><br>
+    <h3 style="text-align:center;">Queremos estar en contacto personal con usted, por favor llene los siguientes espacios</h3>
+    <br>
+    <h3>Antes de llenar y enviar el formulario, lo invitamos a leer nuestro <a href="#" style="color:red;">Aviso de Privacidad</a></h3><br>
+    <h3 style="color:red;"><b>ATENCIÓN:</b> Al llenar y enviar el formulario, Ud. acepta haber leído nuestro Aviso de Privacidad.</h3><br>
+    <h3 style="color:red;">* Campo requerido.</h3>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="Empresa">Empresa:</label><br>
+        <input class="form-control" type="text" name="empresa" value="">
+      </div>
+      <div class="col-md-6">
+        <label for="RFC"></label>RFC:<br>
+        <input class="form-control" type="text" name="RFC" value="">
+      </div>
+    </div>
+    <br>
+    <label for="Giro">Giro:</label><br>
+    <input class="form-control" type="text" name="Giro" value=""><br>
+    <label for="Cargo">Cargo:</label>
+    <input class="form-control" type="text" name="Cargo" value=""><br>
+    <label for="nombre">Nombre(s): <b style="color:red;">*</b></label><br>
+    <input class="form-control" type="text" name="nombres" value=""><br>
+    <label for="apellidos">Apellidos: <b style="color:red;">*</b></label><br>
+    <input class="form-control" type="text" name="apellidos" value=""><br>
+    <label for="email">Email: <b style="color:red;">*</b></label><br>
+    <input class="form-control" type="text" name="email" value=""><br>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="telefono ">Telefono (incluir clave LADA): <b style="color:red;">*</b></label><br>
+        <input class="form-control" type="text" name="telefono" value="">
+      </div>
+      <div class="col-md-6">
+        <label for="celular"></label>Celular:<br>
+        <input class="form-control" type="celular" name="RFC" value="">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="ciudad">Ciudad: <b style="color:red;">*</b></label><br>
+        <input class="form-control" type="text" name="ciudad" value="">
+      </div>
+      <div class="col-md-6">
+        <label for="estado"></label>Estado: <b style="color:red;">*</b><br>
+        <input class="form-control" type="text" name="estado" value="">
+      </div>
+
+
+    </div>
+    <br>
+    <div class="">
+      <label class="col-md-4 control-label" for="checkboxes"><h5>Temporada de Interés:</h5></label>
+      <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      <b>Navidad</b>
+      </label>
+      <label class="checkbox-inline" for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      <b>Fiestas Patrias</b>
+      </label>
+      <label class="checkbox-inline" for="checkboxes-2">
+      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+      <b>Día de Muertos</b>
+      </label>
+      <label class="checkbox-inline" for="checkboxes-3">
+      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
+      <b>Carnavales</b>
+      </label>
+      <label class="checkbox-inline" for="checkboxes-4">
+      <input type="checkbox" name="checkboxes" id="checkboxes-4" value="5">
+      <b>Otras</b>
+      </label>
+    </div>
+    <br>
+    <div class="row">
+      <label for="radios"><h5>¿Cómo nos conoció?:</h5> </label><br>
+      <label class="radio-inline" for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+        Recomendación
+      </label><br><br>
+      <label class="radio-inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Página Web
+      </label><br><br>
+      <label class="radio-inline" for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="3">
+      Publicidad en Internet
+      </label><br><br>
+      <label class="radio-inline" for="radios-3">
+      <input type="radio" name="radios" id="radios-3" value="4">
+      Redes Sociales
+      </label><br><br>
+      <label class="radio-inline" for="radios-4">
+      <input type="radio" name="radios" id="radios-4" value="5">
+      Visita de un Vendedor
+      </label><br><br>
+      <label class="radio-inline" for="radios-5">
+      <input type="radio" name="radios" id="radios-5" value="6">
+      Invitación por correo electrónico
+      </label><br><br>
+    </div>
+    <br>
+    <button class="btn btn-outline-secondary" type="submit" name="button">Enviar</button>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="col-md-3"></div>
+</div>
+{% endblock %}
