@@ -5,7 +5,7 @@ Beaker==1.12.1
 beautifulsoup4==4.12.2
 blivet==3.7.1
 blivet-gui==2.4.2
-git+http:https://git.heroku.com/navidadapp.git
+git+http:git+https://github.com/tu-usuario/navidad.es.git
 Brlapi==0.8.4
 cffi==1.15.1
 chardet==5.2.0
