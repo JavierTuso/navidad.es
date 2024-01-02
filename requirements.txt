@@ -1,9 +1,11 @@
+# Dependencias principales
 argcomplete==2.0.0
 asgiref==3.7.2
 Beaker==1.12.1
 beautifulsoup4==4.12.2
 blivet==3.7.1
 blivet-gui==2.4.2
+git+https://github.com/storaged-project/blivet-gui.git#egg=blivet-gui
 Brlapi==0.8.4
 cffi==1.15.1
 chardet==5.2.0
@@ -75,5 +77,3 @@ systemd-python==235
 Tempita==0.5.2
 urllib3==1.26.18
 whitenoise==6.6.0
-blivet==3.7.1
-git+https://ruta-al-repositorio/blivet-gui.git#egg=blivet-gui
