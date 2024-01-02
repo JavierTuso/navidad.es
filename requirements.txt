@@ -75,3 +75,5 @@ systemd-python==235
 Tempita==0.5.2
 urllib3==1.26.18
 whitenoise==6.6.0
+blivet==3.7.1
+git+https://ruta-al-repositorio/blivet-gui.git#egg=blivet-gui
